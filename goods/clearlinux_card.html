@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/prodPrototype.css">
+    <title>ClearLinux</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../main.html">
+            <h2>Linux</h2>
+            <img class="small_pin" src="../png/linux_pin_small.png" alt="pingween">
+            <h2>TopStore</h2>
+             </a>
+        </nav>
+
+    </header>
+
+    <main class="save_zone">
+        <div class="felex">
+            <div class="prod_fotos">
+                <img src="../png/clearLinux.png" alt="">
+            </div>
+            <div class="margin10px">
+                <div class="center_row">
+                    <p class="a_button center_row">100$$$</p>
+                    <a onclick="alert('nope')" class="a_button center_row" href="">buy</a>
+                </div>
+                <div class="center_row_alt">
+                <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                </div>
+                <div class="stats">
+                <p class="margin10px">
+                    Самый лучший самый красивый самый самый тот самый
+                </p>
+                </div>
+            </div>
+        </div>
+        <section>
+            <h2>Техническая информация</h2>
+            <div class="comments">
+                <h3>Техническая информация</h3>
+                <h3>Основа: Ядро Linux (последняя стабильная версия).</h3>
+                <h3>Системный загрузчик: GRUB или systemd-boot.</h3>
+                <h3>Базовые компоненты:</h3>
+                <p>Ядро Linux, systemd, glibc, bash, основные утилиты GNU (coreutils).</p>
+                <h3>Опциональные компоненты (устанавливаются вручную):</h3>
+                <p>Графическое окружение (Xorg, Wayland, GNOME, KDE Plasma, XFCE и т.д.).</p>
+                <p>Драйверы устройств (видео, звук, сеть и т.д.).</p>
+                <p>Инструменты разработки (gcc, make и т.д.).</p>
+                <p>Приложения (браузер, текстовый редактор, офисный пакет и т.д.).</p>
+                <h3>Требования к оборудованию:</h3>
+                <p>Процессор: Любой процессор, поддерживаемый ядром Linux.</p>
+                <p>Оперативная память: 512 МБ (рекомендуется 1 ГБ и более).</p>
+                <p>Место на диске: 5 ГБ (рекомендуется 10 ГБ и более).</p>
+            
+                <h3>Руководство по установке</h3>
+                <h3>1. Загрузка образа  ISO:</h3>
+                <p>Купите.</p>
+                <h3>2. Создание загрузочной флешки/диска:</h3>
+                <p>Используйте программу Rufus, Etcher или dd для создания загрузочной флешки/диска.</p>
+                <h3>3. Загрузка с флешки/диска:</h3>
+                <p>Перезагрузите компьютер.</p>
+                <p>Во время загрузки нажмите клавишу, соответствующую выбору загрузочного устройства (обычно Del, F2, F12).</p>
+                <p>В BIOS/UEFI выберите загрузку с флешки/диска.</p>
+                <h3>4. Начало установки:</h3>
+                <p>Загрузится минимальная система Linux.</p>
+                <p>Следуйте инструкциям на экране для входа в систему (обычно под именем root без пароля или с паролем, указанным в документации).</p>
+                <h3>5. Подключение к сети:</h3>
+                <p>Подключитесь к сети с помощью команды `ip` или `dhcpcd` (зависит от дистрибутива).</p>
+                <p>Убедитесь, что есть доступ к интернету (`ping google.com`).</p>
+                <h3>6. Разметка диска:</h3>
+                <p>Создайте как минимум два раздела: корневой (`/`) и swap (обмен).</p>
+                <h3>7. Создание файловой системы:</h3>
+                <p>Используйте команду `mkfs` для создания файловой системы на созданном разделе (например, `mkfs.ext4 /dev/sda1`).</p>
+                <h3>8. Монтирование разделов:</h3>
+                <p>Смонтируйте корневой раздел в `/mnt` (`mount /dev/sda1 /mnt`).</p>
+                <p>Создайте каталог `/mnt/boot` и смонтируйте раздел, предназначенный для загрузчика, в `/mnt/boot` (если он существует).</p>
+                <h3>9. Установка базовой системы:</h3>
+                <p>Используйте утилиту `pacstrap` (Arch Linux), `debootstrap` (Debian) или аналогичную для установки базовых пакетов в `/mnt`.</p>
+                <h3>10. Настройка системы:</h3>
+                <p>Сгенерируйте файл `/mnt/etc/fstab` (используйте `genfstab` или отредактируйте вручную).</p>
+                <p>Скопируйте файл `/etc/resolv.conf` в `/mnt/etc/resolv.conf` (если он существует).</p>
+                <p>Chroot в новую систему (`arch-chroot /mnt` или `chroot /mnt /bin/bash`).</p>
+                <p>Настройте часовой пояс (`ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime`).</p>
+                <p>Установите имя хоста (`echo "myhostname" > /etc/hostname`).</p>
+                <p>Установите пароль для root (`passwd`).</p>
+                <h3>11. Установка загрузчика:</h3>
+                <p>Установите загрузчик GRUB или systemd-boot.</p>
+                <p>Настройте загрузчик в соответствии с вашей системой (смотрите документацию дистрибутива).</p>
+                <h3>12. Перезагрузка:</h3>
+                <p>Выйдите из chroot (`exit`).</p>
+                <p>Отмонтируйте все разделы (`umount /mnt/boot`, `umount /mnt`).</p>
+                <p>Перезагрузите компьютер (`reboot`).</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Отзывы</h2>
+            <div class="center_row">
+                <div class="column_center">
+                    <input id="name" type="text">
+                    <input id="comment" type="text" >
+                </div>
+            <button onclick="createCommetn()" class="a_button">оставить комментарий</button>
+            </div>
+            <div id="comments" class="comments">
+                <div class="comment">
+                    <h2>Любитель линукса:</h2>
+                <p class="margin10px">
+                    Лучший дистрибутив в мире
+                </p>
+                </div>
+                <div class="comment">
+                    <h2>Любитель линукса:</h2>
+                <p class="margin10px">
+                    Лучший дистрибутив в мире
+                </p>
+                </div>
+                <div class="comment">
+                    <h2>Любитель линукса:</h2>
+                <p class="margin10px">
+                    Лучший дистрибутив в мире
+                </p>
+                </div>
+                <div class="comment">
+                    <h2>Любитель линукса:</h2>
+                <p class="margin10px">
+                    Лучший дистрибутив в мире
+                </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Все права защищены(с)2025</p>
+        <p>А разработчки нет</p>
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

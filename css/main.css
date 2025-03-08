@@ -1,0 +1,318 @@
+:root{
+    --body_color:#ffffff;
+    --main_color:#D9D9D9;
+    --second_color:#7F7F7F;
+    --third_color:#30FF04;
+    --card_second:#747474;
+    --button_push:#353535;
+    --shadow:#000000;
+    --feedback_color:#000000;
+    --text_color:#30FF04;
+    --s_text_color:#22C000;
+    --white_text:#ffffff;
+    --star_color:#F6FF00;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    background: url("./png/medium_pin.png");  
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment:fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+p, h2, h3{
+    word-wrap: break-word;
+}
+.pin_back{
+    width: 618px;
+    height: 535px;
+    position: sticky;
+}
+.small_pin{
+    width: 100%;
+    width: 88px;
+    height: 80px;
+}
+nav{
+    background-color: var(--main_color);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav>h2{
+    font:32px 'AnonymousPro_Regular';
+}
+nav>img{
+    margin: 0px 20px;
+}
+footer{
+    background-color: var(--main_color);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer>h2{
+    font:32px 'AnonymousPro_Regular';
+}
+.center_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.center_row_alt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.want_be_cool{
+    background-color: var(--second_color);
+    width: 100%;
+    height: 885px;
+    display: flex;
+    flex-direction: row;
+    font:32px 'AnonymousPro_Regular';
+    color: var(--white_text);
+}
+.want_be_cool>img{
+    display: flex;
+    margin-right: 128px;
+    width: 474px;
+    height: 590px;
+}
+.green_text{
+    color: var(--text_color);
+}
+.a_button{
+    width: 200px;
+    height: 100px;
+    background-color: var(--main_color);
+    box-shadow: 2px 2px 4px var(--shadow);
+
+    color: var(--s_text_color);
+    font:32px 'AnonymousPro_Regular';
+    border-radius: 15px;
+
+    transition: all 2s;
+}
+.a_button:hover{
+    transition: all 2s;
+    background-color: var(--second_color);
+}
+
+
+.a_button:active{
+    transition: all 0s;
+    background-color: var(--button_push);
+}
+a{
+    transition: all 2s;
+    background-color: var(--main_color);
+}
+a:hover{
+    transition: all 2s;
+    background-color: var(--shadow);
+}
+a:active{
+    transition: all 0s;
+    background-color: var(--button_push);
+}
+
+.catolog{
+    font: 32px 'AnonymousPro_Regular';
+    color: var(--second_color);
+}
+
+.save_zone{
+    margin: 0px 40px;
+}
+
+.column_card{
+    flex: 0 1 525px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cards{
+    margin: 10px;
+    flex-flow:wrap;
+    justify-content: center;
+}
+.card{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second_color);
+    border-radius: 20px;
+    width: 525px;
+    height: 720px;
+    transition: all 0.1s;
+}
+.card:hover{
+    padding: 10px;
+    transition: all 0.1s;
+}
+.card_name{
+    font: 32px 'AnonymousPro_Regular';
+    text-align: center;
+    color: var(--feedback_color);
+}
+.card>img{
+    border-radius: 20px;
+    width: 410px;
+    height: 346px;
+}
+.card_a{
+    border-radius: 20px;
+    background-color: var(--card_second);
+    width: 140px;
+    height: 95px;
+
+    color: var(--text_color);
+}
+.card_price{
+    border-radius: 20px;
+    background-color: var(--card_second);
+    color: var(--white_text);
+    width: 270px;
+    height: 120px;
+    margin-right: 41px;
+    font-size: 32px;
+}
+.feedback{
+    border-radius: 20px;
+    background-color: var(--card_second);
+    color:var(--feedback_color);
+    width: 138px;
+    height: 88px;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 52px;
+}
+.spacebetween{
+    display: flex;
+    justify-content: space-between;
+}
+.sort{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--main_color);
+}
+.mobile_hide{
+    display: flex;
+}
+.stars{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 360px;
+}
+.star{
+    margin: 10px;
+        width: 52px;
+        height: 48px;
+        background-color: var(--star_color);
+        clip-path: polygon(
+            50% 0%, 
+            61% 35%, 
+            98% 35%, 
+            68% 57%, 
+            79% 91%, 
+            50% 70%, 
+            21% 91%, 
+            32% 57%, 
+            2% 35%, 
+            39% 35%
+        );
+}
+@font-face {
+    font-family: AnonymousPro_Regular;
+    src: url(../front/AnonymousPro-Regular.ttf);
+}
+@media screen and (max-width:767px) {
+    .card:hover{
+        padding: 0px;
+        transition: all 0.1s;
+    }    
+    nav{
+        justify-content: space-evenly;
+    }
+
+    .want_be_cool{
+        flex-direction: column;
+    }
+    .want_be_cool>img{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .card_price{
+        margin-right: 0px;
+        height: 100px;
+        width: 170px;
+    }
+    .card_name{
+        font: 26px 'AnonymousPro_Regular';
+    }
+    .card{
+        width: 100%;    
+        margin: 10px 0px;
+    }
+    .cards{
+    margin: 0px;
+    }
+    .center_row_alt{
+        flex-direction: column;
+        margin: 5px;
+    }
+    .card>img{
+        width: 200px;
+        height: 250px;
+    }
+    .stars{
+        flex-direction: row;
+        max-width: 260px;
+    }
+}
+@media screen and (min-width:1921px) {
+    body{
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        max-width: 1920px;
+    }
+    header{
+        width: 100%;
+    }
+}
