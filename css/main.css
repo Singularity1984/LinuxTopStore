@@ -297,7 +297,7 @@ a:active{
     }
     .card>img{
         width: 200px;
-        height: 250px;
+        height: 200px;
     }
     .stars{
         flex-direction: row;
