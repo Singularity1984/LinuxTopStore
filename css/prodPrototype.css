@@ -231,6 +231,9 @@ input{
     nav{
         justify-content: space-evenly;
     }
+    nav h2{
+    font:20px 'AnonymousPro_Regular';
+    }
     main{
         flex-direction: column;
     }
