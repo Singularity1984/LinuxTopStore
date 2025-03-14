@@ -263,6 +263,9 @@ a:active{
     nav{
         justify-content: space-evenly;
     }
+    nav>h2{
+        font:20px 'AnonymousPro_Regular';
+    }
 
     .want_be_cool{
         flex-direction: column;
