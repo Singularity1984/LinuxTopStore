@@ -147,7 +147,6 @@ a:active{
 }
 
 .column_card{
-    flex: 0 1 525px;
     display: flex;
     flex-direction: column;
 }
