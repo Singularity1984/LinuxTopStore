@@ -200,9 +200,8 @@ section>h2 {
     background-color: var(--main_color);
     margin: 10px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     text-align: start;
 }
 .comment>h2{
