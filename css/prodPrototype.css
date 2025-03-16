@@ -209,6 +209,7 @@ section>h2 {
     border-radius: 15px;
     border: solid 1px black;
     padding: 5px;
+    text-align: center;
 }
 .comment>p {
     margin-bottom: 4px;
