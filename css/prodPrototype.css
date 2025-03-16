@@ -204,6 +204,27 @@ section>h2 {
     align-items: center;
     text-align: start;
 }
+.comment:nth-child(7n+1){
+  background-color: #ff0000;
+}
+.comment:nth-child(7n+2){
+  background-color: #FF4500;
+}
+.comment:nth-child(7n+3){
+  background-color: #FFFF00;
+}
+.comment:nth-child(7n+4){
+  background-color: #00FF00;
+}
+.comment:nth-child(7n+5){
+  background-color: #00FFFF;
+}
+.comment:nth-child(7n+6){
+  background-color: #00008B;
+}
+.comment:nth-child(7n+7){
+  background-color: #800080;
+}
 .comment>h2{
     font: 24px 'AnonymousPro_Regular';
     border-radius: 15px;
