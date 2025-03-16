@@ -227,6 +227,7 @@ section>h2 {
 }
 .comment>h2{
     font: 24px 'AnonymousPro_Regular';
+    background-color: var(--main_color);
     border-radius: 15px;
     border: solid 1px black;
     padding: 5px;
