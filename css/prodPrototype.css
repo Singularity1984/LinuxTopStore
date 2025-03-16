@@ -171,7 +171,6 @@ footer>h2 {
     width: 76%;
     color: var(--black_text);
     font: 20px 'AnonymousPro_Regular';
-    align-items: center;
     display: flex;
     flex-direction: column;
     background-color: var(--main_color);
@@ -202,6 +201,7 @@ section>h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: start;
 }
 .comment>h2{
