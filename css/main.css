@@ -272,38 +272,51 @@ a:active{
     .want_be_cool>img{
         display: none;
     }
-    main{
-        flex-direction: column;
-    }
     .row{
         flex-direction: column;
     }
     .card_price{
+        font: 20px 'AnonymousPro_Regular';
         margin-right: 0px;
         height: 100px;
-        width: 170px;
-    }
+        width: 50vw;
+        }
     .card_name{
-        font: 26px 'AnonymousPro_Regular';
+        font: 20px 'AnonymousPro_Regular';
     }
     .card{
-        width: 100%;    
+        width: 80vw;
         margin: 10px 0px;
     }
+    .card_a{
+        width: 50vw;
+    }
     .cards{
-    margin: 0px;
+        display: flex;
+        align-items: center;
+        margin: 0px;
     }
     .center_row_alt{
         flex-direction: column;
-        margin: 5px;
+        margin: 2px;
     }
     .card>img{
-        width: 200px;
+        width: 50vw;
         height: 200px;
     }
     .stars{
-        flex-direction: row;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        
         max-width: 260px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .row{
+        align-items: center;
+        flex-direction: column;
     }
 }
 @media screen and (min-width:1921px) {
