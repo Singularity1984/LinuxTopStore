@@ -12,5 +12,7 @@ function createCommetn() {
        </div>
     `;
   
+if(name!='' && comment!=``){
     comments.innerHTML += commentHTML;
+}
 }
