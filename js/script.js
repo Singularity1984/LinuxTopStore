@@ -4,7 +4,7 @@ function createCommetn() {
     const comments = document.getElementById('comments');
     const stars = document.getElementById('stars').value;
     let star =`<div class="star"></div>`
-
+    if(stars>5){stars=5};
     for(let i=0; i<stars-1; i++){
         star+=`<div class="star"></div>`;
     }
