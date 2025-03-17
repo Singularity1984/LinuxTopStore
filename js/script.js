@@ -2,9 +2,10 @@ function createCommetn() {
     const name = document.getElementById('name').value;
     const comment = document.getElementById('comment').value;
     const comments = document.getElementById('comments');
-    const stars = document.getElementById('stars').value;
+    let stars = parseInt(document.getElementById('stars').value);
     let star =`<div class="star"></div>`
-    if(stars>5){stars=5};
+    if (stars > 5) {stars = 5;} 
+    else if (stars < 0) {stars = 0;}
     for(let i=0; i<stars-1; i++){
         star+=`<div class="star"></div>`;
     }
