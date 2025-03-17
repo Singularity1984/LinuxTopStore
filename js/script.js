@@ -14,7 +14,7 @@ function createCommetn() {
         <p class="margin10px">
          ${comment}
         </p>
-        <div class="stars">${star}</div>
+        <div class="center_row_alt">${star}</div>
        </div>
     `;
   
