@@ -52,7 +52,7 @@ a {
 
 body {
     margin: 0px;
-    background: url("./png/medium_pin.png");
+    background: url("../png/medium_pin.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
@@ -168,7 +168,6 @@ footer>h2 {
 .comments {
     padding: 10px 5vw;
     word-wrap: break-word;
-    box-sizing: border-box;
     height: 50%;
     width: 76%;
     color: var(--black_text);
@@ -234,6 +233,8 @@ section>h2 {
     border: solid 1px black;
     padding: 5px;
     text-align: center;
+    word-wrap: break-word;
+    max-width: 90%;
 }
 .comment>p {
     margin-bottom: 4px;
@@ -257,11 +258,13 @@ img {
 input {
     width: 100%;
     margin: 10px;
-    padding: 10px 0px;
+    padding: 10px 5px;
     border-radius: 15px;
 }
 textarea{
     width: 100%;
+    max-width: 300px;
+    min-width: 100%;
 }
 .star {
     width: 52px;
@@ -349,7 +352,8 @@ textarea{
         width: 100%;
     }
     textarea{
-        width:100%
+        max-width:50vw;
+        min-width:200px;
     }
     .column_center {
         width: 100%;
@@ -378,6 +382,10 @@ textarea{
         width: 50vw;
         height: 200px;
     }
+    textarea{
+        max-width:100%;
+        min-width:100%
+    }
 
     .felex {
         display: flex;
@@ -396,7 +404,10 @@ textarea{
     nav {
         justify-content: space-evenly;
     }
-
+    textarea{
+        max-width:50vw;
+        min-width:200px;
+    }
     .felex {
         flex-direction: column;
     }

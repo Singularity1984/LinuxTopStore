@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/prodPrototype.css">
     <title>PureOS</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -28,12 +30,16 @@
                     <a onclick="alert('Куплено')" class="a_button center_row" href="">buy</a>
                 </div>
                 <div class="center_row_alt">
-                <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
                 </div>
                 <div class="stats">
-                <p class="margin10px">
-                Чистый на 99.8%
-                </p>
+                    <p class="margin10px">
+                        Чистый на 99.8%
+                    </p>
                 </div>
             </div>
         </div>
@@ -45,7 +51,7 @@
                 <p>3. Загрузка с флешки: Через BIOS/UEFI.</p>
                 <p>4. Установка: Следуйте инструкциям установщика.</p>
                 <p>6. Создайте пользователя.</p>
-                <p>7. Готово.</p>            
+                <p>7. Готово.</p>
             </div>
         </section>
 
@@ -53,19 +59,23 @@
             <h2>Отзывы</h2>
             <div class="center_row">
                 <div class="column_center">
-            <input id="name" type="text" placeholder="Ваше имя">
-            <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
-            <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Наща оценка">
+                    <input id="name" type="text" placeholder="Ваше имя">
+                    <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
+                    <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Ваша оценка(1-5)">
                 </div>
-            <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
+                <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
             </div>
             <div id="comments" class="comments">
                 <div class="comment">
-                <h2>Женя Розовочелый:</h2>
-                <p class="margin10px">
-PureOS - это дистрибутив Linux, который с самого начала заявляет о своей приверженности принципам свободы и приватности. Если вы, как и я, стремитесь к максимальному контролю над своей системой и беспокоитесь о безопасности своих данных, то PureOS может стать для вас отличным выбором. Установка системы проста и понятна, особенно если вы уже знакомы с Debian-based дистрибутивами.
+                    <h2>Женя Розовочелый:</h2>
+                    <p class="margin10px">
+                        PureOS - это дистрибутив Linux, который с самого начала заявляет о своей приверженности
+                        принципам свободы и приватности. Если вы, как и я, стремитесь к максимальному контролю над своей
+                        системой и беспокоитесь о безопасности своих данных, то PureOS может стать для вас отличным
+                        выбором. Установка системы проста и понятна, особенно если вы уже знакомы с Debian-based
+                        дистрибутивами.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -76,9 +86,11 @@ PureOS - это дистрибутив Linux, который с самого н�
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Патриот:</h2>
-                <p class="margin10px">
-PureOS, несмотря на свою благородную цель обеспечения максимальной приватности и использования исключительно свободного программного обеспечения, имеет ряд ограничений, которые могут сделать его непривлекательным для широкого круга пользователей.                 </p>
+                    <h2>Патриот:</h2>
+                    <p class="margin10px">
+                        PureOS, несмотря на свою благородную цель обеспечения максимальной приватности и использования
+                        исключительно свободного программного обеспечения, имеет ряд ограничений, которые могут сделать
+                        его непривлекательным для широкого круга пользователей. </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -89,11 +101,14 @@ PureOS, несмотря на свою благородную цель обес�
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Z_Patriot:</h2>
-                <p class="margin10px">
-PureOS is a Debian-based distribution that emphasizes free software and privacy. It aims to provide a secure and ethical computing experience. Installation is straightforward, utilizing a standard Debian installer. The default desktop environment is GNOME, configured with a focus on simplicity and security.
+                    <h2>Z_Patriot:</h2>
+                    <p class="margin10px">
+                        PureOS is a Debian-based distribution that emphasizes free software and privacy. It aims to
+                        provide a secure and ethical computing experience. Installation is straightforward, utilizing a
+                        standard Debian installer. The default desktop environment is GNOME, configured with a focus on
+                        simplicity and security.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -112,4 +127,5 @@ PureOS is a Debian-based distribution that emphasizes free software and privacy.
     </footer>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

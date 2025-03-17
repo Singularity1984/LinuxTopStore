@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/prodPrototype.css">
     <title>ChromiumOS</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -28,25 +30,29 @@
                     <a onclick="alert('Спасибо за Покупку!')" class="a_button center_row" href="">buy</a>
                 </div>
                 <div class="center_row_alt">
-                <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
                 </div>
                 <div class="stats">
-                <p class="margin10px">
-                    Мне нравится хром, люблю гугл. Вам обязательно нужна эта ОС
-                </p>
+                    <p class="margin10px">
+                        Мне нравится хром, люблю гугл. Вам обязательно нужна эта ОС
+                    </p>
                 </div>
             </div>
         </div>
         <section>
             <h2>Техническая информация</h2>
             <div class="comments">
-            
+
                 <p>1. Купите.</p>
                 <p>2. Загрузочная флешка: Используйте Rufus/Etcher.</p>
                 <p>3. Загрузка с флешки: Через BIOS/UEFI.</p>
                 <p>4. Установка: Используйте графический установщик.</p>
                 <p>6. Авторизация: Google account.</p>
-                <p>7. Готово.</p>            
+                <p>7. Готово.</p>
             </div>
         </section>
 
@@ -54,17 +60,21 @@
             <h2>Отзывы</h2>
             <div class="center_row">
                 <div class="column_center">
-            <input id="name" type="text" placeholder="Ваше имя">
-            <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
-            <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Наща оценка">
+                    <input id="name" type="text" placeholder="Ваше имя">
+                    <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
+                    <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Ваша оценка(1-5)">
                 </div>
-            <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
+                <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
             </div>
             <div id="comments" class="comments">
                 <div class="comment">
-                <h2>Хромбуки Топ:</h2>
-                <p class="margin10px">
-ChromiumOS - это операционная система, которая меняет представление о том, каким может быть компьютер. Я долгое время пользовался Windows, и переход на ChromiumOS стал для меня приятным сюрпризом. Установка оказалась невероятно простой - я просто скачал образ, записал его на USB-накопитель и загрузился с него. Буквально через несколько минут я уже работал в системе! Первое, что бросается в глаза - это невероятная скорость.                </p>
+                    <h2>Хромбуки Топ:</h2>
+                    <p class="margin10px">
+                        ChromiumOS - это операционная система, которая меняет представление о том, каким может быть
+                        компьютер. Я долгое время пользовался Windows, и переход на ChromiumOS стал для меня приятным
+                        сюрпризом. Установка оказалась невероятно простой - я просто скачал образ, записал его на
+                        USB-накопитель и загрузился с него. Буквально через несколько минут я уже работал в системе!
+                        Первое, что бросается в глаза - это невероятная скорость. </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -75,11 +85,15 @@ ChromiumOS - это операционная система, которая ме
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Потерпимич:</h2>
-                <p class="margin10px">
-Конечно, у ChromiumOS есть и свои ограничения. Если вы привыкли к большому количеству десктопных приложений, то вам может не хватить их в ChromiumOS. Но для большинства задач, таких как работа с текстом, просмотр видео, общение в социальных сетях и работа с электронной почтой, ChromiumOS подходит идеально. Кроме того, можно использовать Linux-контейнеры для запуска некоторых Linux-приложений, если это необходимо.
+                    <h2>Потерпимич:</h2>
+                    <p class="margin10px">
+                        Конечно, у ChromiumOS есть и свои ограничения. Если вы привыкли к большому количеству десктопных
+                        приложений, то вам может не хватить их в ChromiumOS. Но для большинства задач, таких как работа
+                        с текстом, просмотр видео, общение в социальных сетях и работа с электронной почтой, ChromiumOS
+                        подходит идеально. Кроме того, можно использовать Linux-контейнеры для запуска некоторых
+                        Linux-приложений, если это необходимо.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -90,11 +104,15 @@ ChromiumOS - это операционная система, которая ме
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Я_Patriot:</h2>
-                <p class="margin10px">
-ChromiumOS представляет собой интересный эксперимент в мире операционных систем. Идея использования браузера как основы для всей системы имеет свои преимущества и недостатки. Установка ChromiumOS достаточно проста, особенно если использовать готовые сборки, такие как Neverware CloudReady (ныне Google ChromeOS Flex) или другие дистрибутивы, ориентированные на установку на различные типы оборудования.
+                    <h2>Я_Patriot:</h2>
+                    <p class="margin10px">
+                        ChromiumOS представляет собой интересный эксперимент в мире операционных систем. Идея
+                        использования браузера как основы для всей системы имеет свои преимущества и недостатки.
+                        Установка ChromiumOS достаточно проста, особенно если использовать готовые сборки, такие как
+                        Neverware CloudReady (ныне Google ChromeOS Flex) или другие дистрибутивы, ориентированные на
+                        установку на различные типы оборудования.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -113,4 +131,5 @@ ChromiumOS представляет собой интересный экспер
     </footer>
     <script src="../js/script.js"></script>
 </body>
+
 </html>

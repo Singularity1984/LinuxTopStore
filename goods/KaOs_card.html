@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/prodPrototype.css">
     <title>KaOs</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="../main.html">
-            <h2>Linux</h2>
-            <img class="small_pin" src="../png/linux_pin_small.png" alt="pingween">
-            <h2>TopStore</h2>
-             </a>
+                <h2>Linux</h2>
+                <img class="small_pin" src="../png/linux_pin_small.png" alt="pingween">
+                <h2>TopStore</h2>
+            </a>
         </nav>
 
     </header>
@@ -29,12 +31,15 @@
                     <a onclick="alert('nope')" class="a_button center_row" href="">buy</a>
                 </div>
                 <div class="center_row_alt">
-                <div class="star"></div><div class="star"></div><div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
                 </div>
                 <div class="stats">
-                <p class="margin10px">
-                    KaOS не основан на других дистрибутивах, он был создан с нуля. Нитакой как все для нитаких как все.
-                </p>
+                    <p class="margin10px">
+                        KaOS не основан на других дистрибутивах, он был создан с нуля. Нитакой как все для нитаких как
+                        все.
+                    </p>
                 </div>
             </div>
         </div>
@@ -64,7 +69,7 @@
                 <p>Доступ к интернету: Необходим для загрузки пакетов во время установки и обновлений.</p>
                 <h3>Целевая аудитория:</h3>
                 <p>Пользователи, любящие KDE Plasma и желающие иметь rolling-release дистрибутив.</p>
-            
+
                 <h3>Руководство по установке</h3>
                 <h3>1. Загрузка ISO-образа:</h3>
                 <p>Купите у нас</p>
@@ -72,7 +77,8 @@
                 <p>Используйте программу Rufus, Etcher или dd для создания загрузочной флешки/диска.</p>
                 <h3>3. Загрузка с флешки/диска:</h3>
                 <p>Перезагрузите компьютер.</p>
-                <p>Во время загрузки нажмите клавишу, соответствующую выбору загрузочного устройства (обычно Del, F2, F12).</p>
+                <p>Во время загрузки нажмите клавишу, соответствующую выбору загрузочного устройства (обычно Del, F2,
+                    F12).</p>
                 <p>В BIOS/UEFI выберите загрузку с флешки/диска.</p>
                 <h3>4. Начало установки:</h3>
                 <p>Загрузится Live-среда KaOS с графическим установщиком Calamares.</p>
@@ -82,7 +88,8 @@
                 <p>Подключитесь к сети Wi-Fi (если необходимо) в настройках Calamares.</p>
                 <p>Убедитесь, что есть доступ к интернету (например, откройте веб-браузер).</p>
                 <h3>6. Разметка диска:</h3>
-                <p><strong>ВНИМАНИЕ!</strong> Этот шаг может привести к потере данных! Сделайте резервную копию важных файлов!</p>
+                <p><strong>ВНИМАНИЕ!</strong> Этот шаг может привести к потере данных! Сделайте резервную копию важных
+                    файлов!</p>
                 <p>В Calamares выберите способ разметки диска:</p>
                 <p>При ручной разметке: создайте как минимум корневой раздел (`/`) и, рекомендуется, раздел swap.</p>
                 <h3>7. Настройка системы:</h3>
@@ -90,7 +97,8 @@
                 <p>Выберите раскладку клавиатуры.</p>
                 <p>Настройте имя хоста.</p>
                 <p>Создайте учетную запись пользователя (имя пользователя, пароль).</p>
-                <p>Выберите, устанавливать ли загрузчик (обычно GRUB) и куда его установить (обычно в MBR или UEFI раздел).</p>
+                <p>Выберите, устанавливать ли загрузчик (обычно GRUB) и куда его установить (обычно в MBR или UEFI
+                    раздел).</p>
                 <p>Выберите, хотите ли вы использовать проприетарные драйверы для видеокарты.</p>
                 <p>Выберите, какой офисный пакет вы хотите установить (Calligra или LibreOffice).</p>
                 <h3>8. Установка:</h3>
@@ -104,26 +112,31 @@
                 <p>Обновите систему: `sudo pacman -Syu` (в терминале).</p>
                 <p>Установите необходимые драйверы и приложения (через Pacman или графический интерфейс).</p>
                 <p>Настройте KDE Plasma под свои нужды.</p>
-                        </div>
+            </div>
         </section>
 
         <section>
             <h2>Отзывы</h2>
             <div class="center_row">
                 <div class="column_center">
-            <input id="name" type="text" placeholder="Ваше имя">
-            <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
-            <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Наща оценка">
+                    <input id="name" type="text" placeholder="Ваше имя">
+                    <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
+                    <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Ваша оценка(1-5)">
                 </div>
-            <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
+                <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
             </div>
             <div id="comments" class="comments">
                 <div class="comment">
-                <h2>Николай Абудидабудай:</h2>
-                <p class="margin10px">
-KaOS – это дистрибутив, который сразу привлекает внимание своей элегантностью и современным подходом к разработке. Если вы, как и я, являетесь поклонником KDE, то KaOS станет для вас настоящей находкой. Этот дистрибутив целиком и полностью посвящен Plasma, и это заметно во всем: от тщательно подобранных тем оформления до глубокой интеграции с KDE Frameworks и приложениями KDE Gear. Установка системы оказалась на удивление простой, особенно если учесть, что KaOS – дистрибутив rolling-release.
+                    <h2>Николай Абудидабудай:</h2>
+                    <p class="margin10px">
+                        KaOS – это дистрибутив, который сразу привлекает внимание своей элегантностью и современным
+                        подходом к разработке. Если вы, как и я, являетесь поклонником KDE, то KaOS станет для вас
+                        настоящей находкой. Этот дистрибутив целиком и полностью посвящен Plasma, и это заметно во всем:
+                        от тщательно подобранных тем оформления до глубокой интеграции с KDE Frameworks и приложениями
+                        KDE Gear. Установка системы оказалась на удивление простой, особенно если учесть, что KaOS –
+                        дистрибутив rolling-release.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -134,11 +147,14 @@ KaOS – это дистрибутив, который сразу привлек
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Андрей Губин:</h2>
-                <p class="margin10px">
-KaOS, как и многие современные дистрибутивы Linux, оставляет желать лучшего с точки зрения приватности “из коробки”. Несмотря на то, что это не Red Hat или Ubuntu с их спорными практиками сбора данных, KaOS все равно требует внимательного подхода к настройке, если вы действительно заботитесь о своей приватности.
+                    <h2>Андрей Губин:</h2>
+                    <p class="margin10px">
+                        KaOS, как и многие современные дистрибутивы Linux, оставляет желать лучшего с точки зрения
+                        приватности “из коробки”. Несмотря на то, что это не Red Hat или Ubuntu с их спорными практиками
+                        сбора данных, KaOS все равно требует внимательного подхода к настройке, если вы действительно
+                        заботитесь о своей приватности.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -149,11 +165,14 @@ KaOS, как и многие современные дистрибутивы Lin
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Z_Patriot:</h2>
-                <p class="margin10px">
-KaOS is a distribution that primarily targets users who are fans of the KDE Plasma desktop environment and appreciate a rolling release model. It aims to provide a consistent and up-to-date KDE experience. My primary interest was to assess its stability and ease of use for a daily driver system.
+                    <h2>Z_Patriot:</h2>
+                    <p class="margin10px">
+                        KaOS is a distribution that primarily targets users who are fans of the KDE Plasma desktop
+                        environment and appreciate a rolling release model. It aims to provide a consistent and
+                        up-to-date KDE experience. My primary interest was to assess its stability and ease of use for a
+                        daily driver system.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -174,4 +193,5 @@ KaOS is a distribution that primarily targets users who are fans of the KDE Plas
     <script src="../js/script.js"></script>
 
 </body>
+
 </html>

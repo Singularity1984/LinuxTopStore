@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/prodPrototype.css">
     <title>ClearLinux</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="../main.html">
-            <h2>Linux</h2>
-            <img class="small_pin" src="../png/linux_pin_small.png" alt="pingween">
-            <h2>TopStore</h2>
-             </a>
+                <h2>Linux</h2>
+                <img class="small_pin" src="../png/linux_pin_small.png" alt="pingween">
+                <h2>TopStore</h2>
+            </a>
         </nav>
 
     </header>
@@ -29,12 +31,16 @@
                     <a onclick="alert('nope')" class="a_button center_row" href="">buy</a>
                 </div>
                 <div class="center_row_alt">
-                <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
                 </div>
                 <div class="stats">
-                <p class="margin10px">
-                    Самый лучший самый красивый самый самый тот самый
-                </p>
+                    <p class="margin10px">
+                        Самый лучший самый красивый самый самый тот самый
+                    </p>
                 </div>
             </div>
         </div>
@@ -55,31 +61,36 @@
                 <p>Процессор: Любой процессор, поддерживаемый ядром Linux.</p>
                 <p>Оперативная память: 512 МБ (рекомендуется 1 ГБ и более).</p>
                 <p>Место на диске: 5 ГБ (рекомендуется 10 ГБ и более).</p>
-            
+
                 <h3>Руководство по установке</h3>
-                <h3>1. Загрузка образа  ISO:</h3>
+                <h3>1. Загрузка образа ISO:</h3>
                 <p>Купите.</p>
                 <h3>2. Создание загрузочной флешки/диска:</h3>
                 <p>Используйте программу Rufus, Etcher или dd для создания загрузочной флешки/диска.</p>
                 <h3>3. Загрузка с флешки/диска:</h3>
                 <p>Перезагрузите компьютер.</p>
-                <p>Во время загрузки нажмите клавишу, соответствующую выбору загрузочного устройства (обычно Del, F2, F12).</p>
+                <p>Во время загрузки нажмите клавишу, соответствующую выбору загрузочного устройства (обычно Del, F2,
+                    F12).</p>
                 <p>В BIOS/UEFI выберите загрузку с флешки/диска.</p>
                 <h3>4. Начало установки:</h3>
                 <p>Загрузится минимальная система Linux.</p>
-                <p>Следуйте инструкциям на экране для входа в систему (обычно под именем root без пароля или с паролем, указанным в документации).</p>
+                <p>Следуйте инструкциям на экране для входа в систему (обычно под именем root без пароля или с паролем,
+                    указанным в документации).</p>
                 <h3>5. Подключение к сети:</h3>
                 <p>Подключитесь к сети с помощью команды `ip` или `dhcpcd` (зависит от дистрибутива).</p>
                 <p>Убедитесь, что есть доступ к интернету (`ping google.com`).</p>
                 <h3>6. Разметка диска:</h3>
                 <p>Создайте как минимум два раздела: корневой (`/`) и swap (обмен).</p>
                 <h3>7. Создание файловой системы:</h3>
-                <p>Используйте команду `mkfs` для создания файловой системы на созданном разделе (например, `mkfs.ext4 /dev/sda1`).</p>
+                <p>Используйте команду `mkfs` для создания файловой системы на созданном разделе (например, `mkfs.ext4
+                    /dev/sda1`).</p>
                 <h3>8. Монтирование разделов:</h3>
                 <p>Смонтируйте корневой раздел в `/mnt` (`mount /dev/sda1 /mnt`).</p>
-                <p>Создайте каталог `/mnt/boot` и смонтируйте раздел, предназначенный для загрузчика, в `/mnt/boot` (если он существует).</p>
+                <p>Создайте каталог `/mnt/boot` и смонтируйте раздел, предназначенный для загрузчика, в `/mnt/boot`
+                    (если он существует).</p>
                 <h3>9. Установка базовой системы:</h3>
-                <p>Используйте утилиту `pacstrap` (Arch Linux), `debootstrap` (Debian) или аналогичную для установки базовых пакетов в `/mnt`.</p>
+                <p>Используйте утилиту `pacstrap` (Arch Linux), `debootstrap` (Debian) или аналогичную для установки
+                    базовых пакетов в `/mnt`.</p>
                 <h3>10. Настройка системы:</h3>
                 <p>Сгенерируйте файл `/mnt/etc/fstab` (используйте `genfstab` или отредактируйте вручную).</p>
                 <p>Скопируйте файл `/etc/resolv.conf` в `/mnt/etc/resolv.conf` (если он существует).</p>
@@ -101,21 +112,22 @@
             <h2>Отзывы</h2>
             <div class="center_row">
                 <div class="column_center">
-            <input id="name" type="text" placeholder="Ваше имя">
-            <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
-            <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Наща оценка">
+                    <input id="name" type="text" placeholder="Ваше имя">
+                    <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
+                    <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Ваша оценка(1-5)">
                 </div>
-            <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
+                <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
             </div>
             <div id="comments" class="comments">
                 <div class="comment">
-                <h2>Славик Простович:</h2>
-                <p class="margin10px">
-                Clear развертывания приложений.
-                Особенно радует поддержка контейнеров Docker и Kubernetes.
-                Установка системы проста и понятна, а документация подробная и исчерпывающая.
-                Clear Linux – это отличный выбор для тех, кто ценит скорость, производительность и современные технологии.
-                </p>
+                    <h2>Славик Простович:</h2>
+                    <p class="margin10px">
+                        Clear развертывания приложений.
+                        Особенно радует поддержка контейнеров Docker и Kubernetes.
+                        Установка системы проста и понятна, а документация подробная и исчерпывающая.
+                        Clear Linux – это отличный выбор для тех, кто ценит скорость, производительность и современные
+                        технологии.
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -126,15 +138,20 @@
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Патриот Син Цзин Пина:</h2>
-                <p class="margin10px">
-                Clear Linux, может, и быстрая система, но у меня с ней возникло много проблем. Во-первых, совместимость с оборудованием оставляет желать лучшего.
-                Моя видеокарта и Wi-Fi адаптер работали нестабильно, и мне пришлось потратить много времени на поиск драйверов. Во-вторых, установка и настройка Clear Linux сложна для новичков.
-                Документация хорошая, но требует определенных знаний о Linux. В-третьих, выбор программного обеспечения ограничен.
-                Многие популярные приложения отсутствуют в репозиториях, и приходится искать альтернативные способы установки.
-                В общем, Clear Linux подходит только для опытных пользователей, которые готовы тратить время на настройку и решение проблем.
+                    <h2>Патриот Син Цзин Пина:</h2>
+                    <p class="margin10px">
+                        Clear Linux, может, и быстрая система, но у меня с ней возникло много проблем. Во-первых,
+                        совместимость с оборудованием оставляет желать лучшего.
+                        Моя видеокарта и Wi-Fi адаптер работали нестабильно, и мне пришлось потратить много времени на
+                        поиск драйверов. Во-вторых, установка и настройка Clear Linux сложна для новичков.
+                        Документация хорошая, но требует определенных знаний о Linux. В-третьих, выбор программного
+                        обеспечения ограничен.
+                        Многие популярные приложения отсутствуют в репозиториях, и приходится искать альтернативные
+                        способы установки.
+                        В общем, Clear Linux подходит только для опытных пользователей, которые готовы тратить время на
+                        настройку и решение проблем.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -142,15 +159,20 @@
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Z_Patriot:</h2>
-                <p class="margin10px">
-                Clear Linux is an operating system designed for performance and security.
-                It is developed by Intel and optimized for Intel hardware. Installation is relatively straightforward, but requires some technical knowledge.
-                The system is designed to be minimal and lightweight, with a focus on containerization and cloud computing.
-                Package management is handled by swupd, which provides atomic updates and ensures system consistency.
-                Clear Linux offers excellent performance, but may require some customization to meet specific needs. 
-                It’s a good choice for server administrators and developers who need a high-performance and secure operating system.
-                </p>
+                    <h2>Z_Patriot:</h2>
+                    <p class="margin10px">
+                        Clear Linux is an operating system designed for performance and security.
+                        It is developed by Intel and optimized for Intel hardware. Installation is relatively
+                        straightforward, but requires some technical knowledge.
+                        The system is designed to be minimal and lightweight, with a focus on containerization and cloud
+                        computing.
+                        Package management is handled by swupd, which provides atomic updates and ensures system
+                        consistency.
+                        Clear Linux offers excellent performance, but may require some customization to meet specific
+                        needs.
+                        It’s a good choice for server administrators and developers who need a high-performance and
+                        secure operating system.
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -172,4 +194,5 @@
     <script src="../js/script.js"></script>
 
 </body>
+
 </html>

@@ -17,7 +17,7 @@ html{
 }
 body{
     margin: 0px;
-    background: url("./png/medium_pin.png");  
+    background: url("../png/medium_pin.png");  
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment:fixed;

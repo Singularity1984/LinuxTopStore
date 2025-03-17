@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/prodPrototype.css">
     <title>GoboLinux</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -28,12 +30,15 @@
                     <a onclick="alert('Куплено.')" class="a_button center_row" href="">buy</a>
                 </div>
                 <div class="center_row_alt">
-                <div class="star"></div><div class="star"></div><div class="star"></div><div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
                 </div>
                 <div class="stats">
-                <p class="margin10px">
-                    Не для испанцев.
-                </p>
+                    <p class="margin10px">
+                        Не для испанцев.
+                    </p>
                 </div>
             </div>
         </div>
@@ -46,7 +51,7 @@
                 <p>4. Установка: Может потребовать знаний Linux.</p>
                 <p>5. Файловая система: Отличается от стандартной.</p>
                 <p>6. Документация: Важна!</p>
-                <p>7. Готово.</p>            
+                <p>7. Готово.</p>
             </div>
         </section>
 
@@ -54,19 +59,24 @@
             <h2>Отзывы</h2>
             <div class="center_row">
                 <div class="column_center">
-            <input id="name" type="text" placeholder="Ваше имя">
-            <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
-            <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Наща оценка">
+                    <input id="name" type="text" placeholder="Ваше имя">
+                    <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
+                    <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Ваша оценка(1-5)">
                 </div>
-            <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
+                <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
             </div>
             <div id="comments" class="comments">
                 <div class="comment">
-                <h2>Bublegum:</h2>
-                <p class="margin10px">
-GoboLinux es una distribución de Linux que destaca por su singular organización del sistema de archivos. En lugar de la tradicional jerarquía /bin, /usr, /etc, GoboLinux organiza cada programa en su propia carpeta, lo que, en teoría, facilita la gestión y la desinstalación del software. La instalación, sin embargo, puede resultar un tanto más compleja que la de otras distribuciones, ya que requiere una comprensión más profunda de la estructura del sistema de archivos.
+                    <h2>Bublegum:</h2>
+                    <p class="margin10px">
+                        GoboLinux es una distribución de Linux que destaca por su singular organización del sistema de
+                        archivos. En lugar de la tradicional jerarquía /bin, /usr, /etc, GoboLinux organiza cada
+                        programa en su propia carpeta, lo que, en teoría, facilita la gestión y la desinstalación del
+                        software. La instalación, sin embargo, puede resultar un tanto más compleja que la de otras
+                        distribuciones, ya que requiere una comprensión más profunda de la estructura del sistema de
+                        archivos.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -77,11 +87,13 @@ GoboLinux es una distribución de Linux que destaca por su singular organizació
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Amigo:</h2>
-                <p class="margin10px">
-GoboLinux me llamó la atención porque parecía una forma diferente de tener mi ordenador ordenado. La idea de que cada programa tenga su propio espacio sonaba genial, pero al intentar instalarlo, me di cuenta de que no era tan fácil como pensaba.
+                    <h2>Amigo:</h2>
+                    <p class="margin10px">
+                        GoboLinux me llamó la atención porque parecía una forma diferente de tener mi ordenador
+                        ordenado. La idea de que cada programa tenga su propio espacio sonaba genial, pero al intentar
+                        instalarlo, me di cuenta de que no era tan fácil como pensaba.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -92,11 +104,14 @@ GoboLinux me llamó la atención porque parecía una forma diferente de tener mi
                     </div>
                 </div>
                 <div class="comment">
-                <h2>Spanish_Patriot:</h2>
-                <p class="margin10px">
-GoboLinux, a pesar de su innovadora organización del sistema de archivos, no aborda de manera significativa los problemas de seguridad que preocupan a muchos usuarios de Linux. Si bien la organización por programa puede facilitar la eliminación de software no deseado, no ofrece una protección adicional contra malware o vulnerabilidades de seguridad.
+                    <h2>Spanish_Patriot:</h2>
+                    <p class="margin10px">
+                        GoboLinux, a pesar de su innovadora organización del sistema de archivos, no aborda de manera
+                        significativa los problemas de seguridad que preocupan a muchos usuarios de Linux. Si bien la
+                        organización por programa puede facilitar la eliminación de software no deseado, no ofrece una
+                        protección adicional contra malware o vulnerabilidades de seguridad.
 
-                </p>
+                    </p>
                     <div class="center_row_alt">
                         <div class="star"></div>
                         <div class="star"></div>
@@ -115,4 +130,5 @@ GoboLinux, a pesar de su innovadora organización del sistema de archivos, no ab
     </footer>
     <script src="../js/script.js"></script>
 </body>
+
 </html>
