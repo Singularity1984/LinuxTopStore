@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,36 +101,65 @@
             <h2>Отзывы</h2>
             <div class="center_row">
                 <div class="column_center">
-                    <input id="name" type="text">
-                    <input id="comment" type="text" >
+            <input id="name" type="text" placeholder="Ваше имя">
+            <textarea id="comment" type="text" placeholder="Ваш отзыв"></textarea>
+            <input id="stars" type="number" name="stars" min="5" max="5" placeholder="Наща оценка">
                 </div>
-            <button onclick="createCommetn()" class="a_button">оставить комментарий</button>
+            <button onclick="createCommetn()" class="a_button">оставить отзыв</button>
             </div>
             <div id="comments" class="comments">
                 <div class="comment">
-                    <h2>Любитель линукса:</h2>
+                <h2>Славик Простович:</h2>
                 <p class="margin10px">
-                    Лучший дистрибутив в мире
+                Clear развертывания приложений.
+                Особенно радует поддержка контейнеров Docker и Kubernetes.
+                Установка системы проста и понятна, а документация подробная и исчерпывающая.
+                Clear Linux – это отличный выбор для тех, кто ценит скорость, производительность и современные технологии.
                 </p>
+                    <div class="center_row_alt">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+
+                    </div>
                 </div>
                 <div class="comment">
-                    <h2>Любитель линукса:</h2>
+                <h2>Патриот Син Цзин Пина:</h2>
                 <p class="margin10px">
-                    Лучший дистрибутив в мире
+                Clear Linux, может, и быстрая система, но у меня с ней возникло много проблем. Во-первых, совместимость с оборудованием оставляет желать лучшего.
+                Моя видеокарта и Wi-Fi адаптер работали нестабильно, и мне пришлось потратить много времени на поиск драйверов. Во-вторых, установка и настройка Clear Linux сложна для новичков.
+                Документация хорошая, но требует определенных знаний о Linux. В-третьих, выбор программного обеспечения ограничен.
+                Многие популярные приложения отсутствуют в репозиториях, и приходится искать альтернативные способы установки.
+                В общем, Clear Linux подходит только для опытных пользователей, которые готовы тратить время на настройку и решение проблем.
+
                 </p>
+                    <div class="center_row_alt">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
                 </div>
                 <div class="comment">
-                    <h2>Любитель линукса:</h2>
+                <h2>Z_Patriot:</h2>
                 <p class="margin10px">
-                    Лучший дистрибутив в мире
+                Clear Linux is an operating system designed for performance and security.
+                It is developed by Intel and optimized for Intel hardware. Installation is relatively straightforward, but requires some technical knowledge.
+                The system is designed to be minimal and lightweight, with a focus on containerization and cloud computing.
+                Package management is handled by swupd, which provides atomic updates and ensures system consistency.
+                Clear Linux offers excellent performance, but may require some customization to meet specific needs. 
+                It’s a good choice for server administrators and developers who need a high-performance and secure operating system.
                 </p>
+                    <div class="center_row_alt">
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                        <div class="star"></div>
+                    </div>
                 </div>
-                <div class="comment">
-                    <h2>Любитель линукса:</h2>
-                <p class="margin10px">
-                    Лучший дистрибутив в мире
-                </p>
-                </div>
+
 
             </div>
         </section>
